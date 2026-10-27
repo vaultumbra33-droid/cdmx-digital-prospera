@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciudad de México Digital y Próspera | Propuesta Estratégica v1.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="pinModal" class="pin-modal active">
+        <div class="pin-modal-backdrop"></div>
+        <div class="pin-modal-content">
+            <div class="pin-header">
+                <div class="pin-logo"><i class="fas fa-shield-halved"></i></div>
+                <h2>Acceso Protegido</h2>
+                <p>Ciudad de México Digital y Próspera</p>
+            </div>
+            <div class="pin-body">
+                <p class="pin-instruction">Ingrese el PIN de acceso</p>
+                <div class="pin-inputs">
+                    <input type="password" maxlength="1" class="pin-digit" data-index="0" inputmode="numeric">
+                    <input type="password" maxlength="1" class="pin-digit" data-index="1" inputmode="numeric">
+                    <input type="password" maxlength="1" class="pin-digit" data-index="2" inputmode="numeric">
+                    <input type="password" maxlength="1" class="pin-digit" data-index="3" inputmode="numeric">
+                </div>
+                <div id="pinError" class="pin-error"></div>
+                <button id="pinSubmit" class="pin-submit">Acceder</button>
+            </div>
+            <div class="pin-footer"><small>Acceso restringido · Propuesta Confidencial · v1.0 XGT Group · Grupo CSI</small></div>
+        </div>
+    </div>
+
+    <div id="mainSite" class="main-site">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <div class="logo-icon"><i class="fas fa-city"></i></div>
+                    <div class="logo-text">
+                        <span class="logo-title">Ciudad de México Digital y Próspera</span>
+                        <span class="logo-subtitle">Propuesta Estratégica 1.0 · Octubre 2026 · XGT Group · Grupo CSI</span>
+                    </div>
+                </div>
+                <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#resumen" class="nav-link">Resumen</a></li>
+                    <li class="nav-item"><a href="#metodologia" class="nav-link">Metodología</a></li>
+                    <li class="nav-item"><a href="#diagnostico" class="nav-link">Diagnóstico</a></li>
+                    <li class="nav-item"><a href="#portafolio" class="nav-link">Portafolio</a></li>
+                    <li class="nav-item"><a href="#mapa" class="nav-link">Oportunidades</a></li>
+                    <li class="nav-item"><a href="#recaudacion" class="nav-link">Recaudación</a></li>
+                    <li class="nav-item"><a href="#contratacion" class="nav-link">Contratación</a></li>
+                    <li class="nav-item"><a href="#priorizacion" class="nav-link">Priorización</a></li>
+                    <li class="nav-item"><a href="#csi" class="nav-link">Grupo CSI</a></li>
+                    <li class="nav-item"><a href="#riesgos" class="nav-link">Riesgos</a></li>
+                    <li class="nav-item"><a href="#valor" class="nav-link">Acercamiento</a></li>
+                    <li class="nav-item"><a href="#glosario" class="nav-link">Glosario</a></li>
+                    <li class="nav-item"><a href="#anexos" class="nav-link">Anexos</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- HERO -->
+        <header id="inicio" class="hero">
+            <div class="hero-bg">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-certificate"></i>
+                    <span>PROPUESTA CONFIDENCIAL</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-title-line">Ciudad de México</span>
+                    <span class="hero-title-line gradient-text">Digital y Próspera</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Estudio de oportunidades y portafolio de ocho proyectos tecnológicos de orden del espacio público, certeza patrimonial, recaudación, servicios urbanos y movilidad para el Gobierno de la Ciudad de México
+                </p>
+                <div class="hero-meta">
+                    <div class="hero-meta-item">
+                        <i class="fas fa-user-tie"></i>
+                        <span>Para: Clara Brugada Molina, Jefa de Gobierno de la Ciudad de México</span>
+                    </div>
+                    <div class="hero-meta-item">
+                        <i class="fas fa-building-columns"></i>
+                        <span>Jesús Antonio Bustamante Araujo · Aliado tecnológico propuesto: Grupo CSI</span>
+                    </div>
+                    <div class="hero-meta-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Versión 1.0 · Octubre de 2026</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#portafolio" class="btn btn-primary">
+                        <span>Ver las 8 Fichas Completas</span>
+                        <i class="fas fa-file-invoice"></i>
+                    </a>
+                    <a href="#mapa" class="btn btn-secondary">
+                        <span>Mapa de Oportunidades</span>
+                        <i class="fas fa-th-large"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <div class="scroll-indicator">
+                    <span>Deslizar</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- STATS -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-sack-dollar"></i></div>
+                        <div class="stat-content">
+                            <div class="stat-number">183 mil mdp</div>
+                            <div class="stat-label">Recaudación del 1er semestre 2026, 12% sobre la Ley de Ingresos [1]</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-house"></i></div>
+                        <div class="stat-content">
+                            <div class="stat-number">+23.7%</div>
+                            <div class="stat-label">Predial récord · nómina +16.4% · tributarios +9.5% [1]</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-store"></i></div>
+                        <div class="stat-content">
+                            <div class="stat-number">2.2M</div>
+                            <div class="stat-label">Personas en informalidad laboral (45.3% de la población ocupada) [4]</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-file-signature"></i></div>
+                        <div class="stat-content">
+                            <div class="stat-number">294,660</div>
+                            <div class="stat-label">Viviendas propias sin escrituras (16.5%, ENIGH 2024) [8]</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-diagram-project"></i></div>
+                        <div class="stat-content">
+                            <div class="stat-number">8</div>
+                            <div class="stat-label">Proyectos en cuatro frentes, con inversión privada mayoritaria</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 01 RESUMEN EJECUTIVO -->
+        <section id="resumen" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">01</span>
+                    <h2 class="section-title">Resumen Ejecutivo</h2>
+                    <p class="section-subtitle">Un momento fiscal favorable y retos visibles que la tecnología puede ordenar</p>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-chart-line"></i> Momento fiscal y administrativo</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <tbody>
+                                <tr><td>En el primer semestre de 2026 la Ciudad recaudó más de <strong>183 mil millones de pesos</strong>, 12% por encima de lo previsto en su Ley de Ingresos; sus ingresos tributarios locales crecieron <strong>9.5%</strong> hasta 67,922 millones, el predial creció <strong>23.7%</strong> y el impuesto sobre nómina <strong>16.4%</strong> [1]. La inversión pública del primer semestre superó los <strong>17 mil millones de pesos</strong>, 156% más que en el mismo periodo de 2025 [1].</td></tr>
+                                <tr><td>La Jefa de Gobierno anunció en su Segundo Informe que el predial <strong>no subirá</strong> y que en 2027 se <strong>eliminarán multas y recargos</strong> por adeudos [2]. El crecimiento de la recaudación tendrá que venir de ampliar la base, facilitar el pago y reducir la fuga, no de subir tasas: eso es justo lo que resuelven los proyectos de esta propuesta.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-triangle-exclamation"></i> Retos visibles que la tecnología puede ordenar</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <tbody>
+                                <tr><td><strong>45.3%</strong> de la población ocupada trabaja en la informalidad (2.2 millones de personas) [4]</td></tr>
+                                <tr><td>2026 fue declarado el año del reordenamiento del comercio en vía pública, pero <strong>no existe un censo oficial</strong> de comerciantes [5]</td></tr>
+                                <tr><td>Al menos <strong>294,660 viviendas propias</strong> no tienen escrituras [8]</td></tr>
+                                <tr><td>Cientos de miles de baches atendidos con programas masivos, pero de forma <strong>reactiva</strong> [10][11]</td></tr>
+                                <tr><td>El Metro movió <strong>1,241 millones de viajes</strong> en 2025 [17] con una explotación comercial todavía limitada</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-layer-group"></i> Los cuatro frentes del portafolio — proyectos que se complementan</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead><tr><th>Frente</th><th>Proyectos incluidos</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>Orden del espacio público y economía popular</strong></td><td>MiPuesto CDMX, padrón y permiso digital del comercio en vía pública (P1), y Red de abarrotes conectada, que digitaliza pagos, vales y servicios en la tienda de barrio (P6)</td></tr>
+                                <tr><td><strong>Certeza patrimonial y recaudación</strong></td><td>Nexum, regularización predial y catastral (P2), y Escritura digital con alerta contra despojo (P3)</td></tr>
+                                <tr><td><strong>Atención ciudadana y servicios urbanos</strong></td><td>Atención ciudadana por video P2P (P4) y VialIA, detección de baches con IA (P5)</td></tr>
+                                <tr><td><strong>Movilidad e ingresos no tarifarios</strong></td><td>Parquímetros digitales con empleo social (P7) y Metro Conectado, Wi-Fi y medios digitales (P8)</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-route"></i> Ruta de entrada recomendada</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <tbody>
+                                <tr><td><strong>Entrada</strong></td><td>VialIA y Atención P2P: bajo riesgo, piloto sin costo y resultados visibles en semanas</td></tr>
+                                <tr><td><strong>De fondo</strong></td><td>MiPuesto y Nexum, con la escritura digital como extensión natural</td></tr>
+                                <tr><td><strong>Piloto con convenio</strong></td><td>La red de abarrotes puede arrancar aprovechando la red de más de 30 mil comercios ya registrados en Mercomuna [24] y la recién aprobada Ley de Economía Digital [22]</td></tr>
+                                <tr><td><strong>Segunda fase</strong></td><td>Parquímetros y Metro Conectado, con socio financiero y la confianza construida en los primeros proyectos</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-handshake"></i> Modelo económico y aliado tecnológico propuesto</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <tbody>
+                                <tr><td><strong>Inversión privada</strong></td><td>La mayor parte de la inversión la aportan el equipo proponente y sus socios, y se recupera con comisiones, servicios y concesiones, no con presupuesto de la Ciudad</td></tr>
+                                <tr><td><strong>Grupo CSI</strong></td><td>Empresa que se presenta como especialista en identidad digital, contact center omnicanal, fábrica de software, mesa de ayuda y gestión documental para banca y gobierno [28]. Sus capacidades cubren piezas críticas del portafolio: verificación de identidad para padrones (P1, P2, P3), operación de centros de atención (P4) y digitalización de expedientes (P2, P3)</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 02 ALCANCE Y METODOLOGIA -->
+        <section id="metodologia" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">02</span>
+                    <h2 class="section-title">Alcance y Metodología</h2>
+                    <p class="section-subtitle">Cuatro pasos del estudio y limitaciones declaradas</p>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-compass"></i> Cuatro pasos del estudio</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <tbody>
+                                <tr><td style="width:70px"><strong>1</strong></td><td>Revisión del contexto institucional y de las prioridades públicas de la administración</td></tr>
+                                <tr><td><strong>2</strong></td><td>Diagnóstico de los problemas que atiende cada proyecto, con datos verificables</td></tr>
+                                <tr><td><strong>3</strong></td><td>Revisión de lo que la Ciudad ya tiene en operación (Llave CDMX, Locatel y Bachetel, ecoParq, Mercomuna, Wi-Fi gratuito, concesiones del Metro) para complementar y no duplicar</td></tr>
+                                <tr><td><strong>4</strong></td><td>Construcción de cada ficha con su lógica de mercado, modelo de negocio, piloto y riesgos</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-circle-info"></i> Limitaciones</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <tbody>
+                                <tr><td>No se tuvo acceso a datos internos de recaudación, padrones ni contratos vigentes. Las estimaciones económicas son escalas y escenarios de trabajo, no pronósticos</td></tr>
+                                <tr><td>Algunas cifras de mercado provienen de los estudios del propio equipo [27] y se marcan como estimación del equipo, por validar, cuando no tienen una fuente oficial independiente</td></tr>
+                                <tr><td>Varias cifras periodísticas reproducen datos oficiales; antes de citarlas en un documento formal deben confirmarse con la dependencia correspondiente</td></tr>
+                                <tr><td>El Anexo A propone un cuestionario para completar el diagnóstico con las dependencias</td></tr>
+                                <tr><td>Por indicación del equipo, este documento no fija un calendario: las fechas las define la Jefatura de Gobierno según sus prioridades. Los pilotos se describen por su duración típica, no por fechas</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 03 DIAGNOSTICO -->
+        <section id="diagnostico" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">03</span>
+                    <h2 class="section-title">Diagnóstico de la Ciudad</h2>
+                    <p class="section-subtitle">Contexto institucional, finanzas, economía, espacio público, patrimonio, vialidades, Metro, gobierno digital y marco federal</p>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-landmark-flag"></i> 3.1 Contexto institucional</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead><tr><th>Elemento</th><th>Detalle</th></tr></thead>
+                            <tbody>
+                                <tr><td>Periodo de gobierno</td><td>Clara Brugada Molina es Jefa de Gobierno de la Ciudad de México desde el 5 de octubre de 2024 y su periodo concluye en octubre de 2030, por lo que la ventana de ejecución restante es de poco menos de cuatro años</td></tr>
+                                <tr><td>Prioridades de la administración</td><td>Inversión pública, recuperación del espacio público, vivienda y seguridad de las mujeres. En su Segundo Informe reportó 3,600 obras en el espacio público, 30 nuevas Utopías en avance, 450 km de repavimentación con unos 4,000 millones de pesos, 643 obras de agua y drenaje y más de 200 mil luminarias instaladas en 200 Caminos de Mujeres Libres y Seguras [3]</td></tr>
+                                <tr><td>Regularización y despojo</td><td>Anunció el programa de regularización de inmuebles más grande de la capital, junto con una Defensoría Jurídica de la Propiedad y contra el Despojo [9]</td></tr>
+                                <tr><td>Dependencias clave</td><td>Secretaría de Administración y Finanzas (SAF) y Tesorería; Secretaría de Gobierno y su Subsecretaría de Programas de Alcaldías y Reordenamiento en Vía Pública; Secretaría de Obras y Servicios (Sobse); Secretaría de Movilidad (Semovi) y ecoParq; Sistema de Transporte Colectivo (STC) Metro; Agencia Digital de Innovación Pública (ADIP); Locatel; Consejería Jurídica y de Servicios Legales; Registro Público de la Propiedad y de Comercio; y las 16 alcaldías</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-scale-balanced"></i> 3.2 Finanzas públicas</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead><tr><th>Indicador</th><th>Dato</th><th>Fuente</th></tr></thead>
+                            <tbody>
+                                <tr><td>Ingresos totales, 1er semestre 2026</td><td><strong>Más de 183 mil millones de pesos</strong> (12% sobre la Ley de Ingresos)</td><td>[1]</td></tr>
+                                <tr><td>Ingresos tributarios locales, 1er semestre 2026</td><td><strong>67,922 millones de pesos</strong> (+9.5%)</td><td>[1]</td></tr>
+                                <tr><td>Predial</td><td>Récord; crecimiento de <strong>23.7%</strong></td><td>[1]</td></tr>
+                                <tr><td>Impuesto sobre nómina</td><td>Récord; crecimiento de <strong>16.4%</strong></td><td>[1]</td></tr>
+                                <tr><td>Ingresos locales 2025</td><td><strong>151 mil millones de pesos</strong></td><td>[2]</td></tr>
+                                <tr><td>Inversión pública, 1er semestre 2026</td><td>Más de <strong>17 mil millones de pesos</strong> (+156%)</td><td>[1]</td></tr>
+                                <tr><td>Política predial 2027</td><td>Sin aumento; eliminación de multas y recargos</td><td>[2]</td></tr>
+                                <tr><td>Lectura</td><td colspan="2">El Programa de Regularización Fiscal benefició a más de <strong>186 mil contribuyentes</strong> y recaudó más de mil millones de pesos, por lo que se amplió tres meses [1]. La Ciudad responde bien cuando se facilita el cumplimiento. Con el compromiso de no subir el predial y de eliminar multas y recargos en 2027 [2], la siguiente palanca es tecnológica: incorporar predios y contribuyentes que hoy no están en el padrón y reducir el costo de pagar</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="figures-grid">
+                    <div class="figure-card" style="grid-column: 1 / -1; max-width: 900px; margin: 0 auto 2rem;">
+                        <div class="figure-header">Figura 1 · Mercado laboral de la Ciudad de México, segundo trimestre de 2026 — Fuente: INEGI, ENOE [4]</div>
+                        <img src="assets/fig01-mercado-laboral.png" alt="Mercado laboral de la Ciudad de México" class="figure-img">
+                        <div class="figure-caption">La Ciudad tiene 4.9 millones de personas ocupadas; 2.2 millones trabajan en la informalidad (tasa de 45.3%, más alta que el 44.1% de un año antes) y 1.4 millones lo hacen en el sector informal propiamente dicho, es decir, en negocios no registrados [4].</div>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-store"></i> 3.3 Economía e informalidad</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <tbody>
+                                <tr><td>Buena parte de esa economía se mueve en efectivo: a nivel nacional, <strong>85.5%</strong> de las compras menores a 500 pesos todavía se pagan en efectivo, aunque la proporción viene bajando (90.1% en 2021) [23]. Las tiendas de barrio, por su parte, enfrentan presión: <strong>77.5%</strong> de los tenderos considera que su negocio está en riesgo de cerrar, la extorsión representa <strong>20.1%</strong> de los delitos que sufren y <strong>53%</strong> de las tiendas las atienden mujeres [25]</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-people-arrows"></i> 3.4 Espacio público y comercio en vía pública</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <tbody>
+                                <tr><td><strong>Reordenamiento 2026</strong></td><td>La Jefa de Gobierno declaró 2026 como el año del reordenamiento del comercio informal. En la primera fase se fijó la meta de liberar las calles del Centro Histórico de 4,500 comerciantes [5]. En la Alameda Central el número de vendedores bajó de 150 a 75 en tres semanas tras acuerdos con colectivos, a los que el gobierno ofreció locales en estaciones del Metro [6]; la mayoría de los grupos aceptó alternativas, pero tres organizaciones se mantienen en resistencia [7]</td></tr>
+                                <tr><td><strong>El problema de fondo</strong></td><td>Es de información: no existe un censo público y oficial de comerciantes en vía pública; el último registro conocido de la Subsecretaría de Reordenamiento, de 2022, contabilizaba 11,542 puntos de comercio y la propia Secretaría de Gobierno reconoce que sus registros son parciales [5]. El estudio del equipo estima entre <strong>350 mil y 550 mil comerciantes</strong> en toda la Ciudad, con 64% de mujeres [27]. Sin un padrón confiable, el reordenamiento depende de negociaciones caso por caso y la recaudación por uso de vía pública se queda en intermediarios</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-house-circle-exclamation"></i> 3.5 Propiedad, predial y certeza jurídica</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <tbody>
+                                <tr><td><strong>Sin escrituras</strong></td><td>Según la ENIGH 2024, al menos <strong>294,660 viviendas propias</strong> en la Ciudad no tienen escrituras, 16.5% del total de viviendas propias. Escriturar cuesta entre <strong>5% y 8%</strong> del valor del inmueble (impuesto de adquisición, derechos registrales, certificados, avalúo y honorarios), y la inscripción en el Registro Público tarda entre tres semanas y tres meses [8]. La Jornada Notarial ofrece descuentos de 10% a 60% para escrituración y de 40% a 80% para sucesiones [8], pero sigue siendo un proceso presencial y fragmentado</td></tr>
+                                <tr><td><strong>Predios fuera del padrón</strong></td><td>El estudio Nexum del equipo estima unos <strong>500 mil predios</strong> fuera del padrón activo y unos <strong>4,700 millones de pesos anuales no cobrados</strong> (estimación del equipo, por validar con la SAF) [27]</td></tr>
+                                <tr><td><strong>Contexto político favorable</strong></td><td>La Jefa de Gobierno anunció en agosto de 2026 el plan de regularización más grande de la capital, que incluye predios y unidades habitacionales completas sin escrituras, un programa notarial de escrituración y sucesión, y una Defensoría contra el Despojo, con el mensaje de que no habrá espacio para redes de despojo ni cárteles inmobiliarios [9]</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-road"></i> 3.6 Vialidades y baches</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <tbody>
+                                <tr><td>Del 5 de octubre de 2024 al 30 de agosto de 2025 la Ciudad atendió <strong>257,214 baches</strong> y reparó más de <strong>1.02 millones de m²</strong> de asfalto, con una inversión de <strong>1,500 millones de pesos</strong> en Bachetón y Mega Bachetón [10]. Después lanzó un Plan Integral de Mantenimiento de la Carpeta Asfáltica con <strong>2,250 millones de pesos</strong>, bacheo nocturno de 1,000 km y la promesa de atender reportes en menos de 48 horas [11]</td></tr>
+                                <tr><td>El canal de reporte es reactivo: el ciudadano llama al 0311 o usa el chatbot Bachetel de Locatel por WhatsApp, que genera un folio [12]. Lo que falta es un <strong>inventario continuo y objetivo</strong> del estado de la red que permita priorizar antes de que el bache aparezca y verificar que las reparaciones reportadas se hicieron</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-square-parking"></i> 3.7 Estacionamiento en vía pública</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <tbody>
+                                <tr><td>El sistema ecoParq de la Semovi opera parquímetros en polígonos de las alcaldías Miguel Hidalgo, Cuauhtémoc, Benito Juárez y Álvaro Obregón. En 2023 se contaban <strong>1,787 parquímetros</strong> y <strong>30,208 cajones</strong> en 9 polígonos [13]. En 2024 la recaudación superó <strong>525 millones de pesos</strong>; solo Polanco, Anzures y Lomas generan unos 228 millones al año [14]</td></tr>
+                                <tr><td>Desde 2024 el reparto es de <strong>53.8%</strong> para las concesionarias, <strong>16.2%</strong> para la Tesorería y <strong>30%</strong> para mejoras en las colonias, a través de un fideicomiso [15]; en el Congreso hay una iniciativa para subir esa proporción a 40% [14]. La tarifa 2026 es de <strong>3.40 pesos por cada 15 minutos</strong> (unos 13.60 pesos por hora) [16]. Las 12 alcaldías restantes no tienen un sistema de parquímetros</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-train-subway"></i> 3.8 Metro</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <tbody>
+                                <tr><td>El Metro registró <strong>1,241.6 millones de viajes en 2025</strong>, casi 6% más que en 2024, en 12 líneas y 195 estaciones, lo que equivale a unos <strong>3.4 millones de viajes diarios</strong> [17]. En 2026 inicia la modernización integral de la Línea 3 [17]</td></tr>
+                                <tr><td>La publicidad está concesionada a ISA Corporativo mediante un Permiso Administrativo Temporal Revocable vigente hasta el 30 de septiembre de 2030, sobre <strong>46,921 espacios</strong>; la contraprestación mensual pactada en 2020 fue de <strong>19.2 millones de pesos</strong>, 57% de ella pagada en especie con publicidad de programas del gobierno [18]</td></tr>
+                                <tr><td>Existe Wi-Fi gratuito en varias líneas instalado por AT&T desde 2019 [19] y la Ciudad tiene más de <strong>35 mil puntos de Wi-Fi público gratuito</strong> en otros espacios [20]. Cualquier proyecto en el Metro debe diseñarse alrededor de estas concesiones vigentes, no en competencia con ellas</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-mobile-screen"></i> 3.9 Gobierno digital y atención ciudadana</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <tbody>
+                                <tr><td>La Ciudad tiene una base digital sólida: la ADIP opera <strong>Llave CDMX</strong>, la App CDMX con cartera digital (licencias y tarjeta de circulación) y trámites en línea del Registro Civil. A nivel federal, Llave MX supera los <strong>28 millones de cuentas</strong>, 2.16 millones de ellas en la Ciudad de México, y ya integra <strong>242 sistemas de gobierno</strong> [21]</td></tr>
+                                <tr><td>Locatel atendió a <strong>5.3 millones de personas</strong> entre octubre de 2024 y agosto de 2025, gestionó <strong>177 mil trámites digitales</strong> y canalizó <strong>744 mil folios</strong> de atención [12]. El hueco que queda es la atención humana a distancia: el trámite que no se resuelve en línea todavía obliga a una visita presencial</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-credit-card"></i> 3.10 Marco federal: pagos digitales y datos personales</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <tbody>
+                                <tr><td><strong>Ley de Economía Digital para Pagos Digitales y Electrónicos</strong></td><td>Aprobada por el Senado el 20 de octubre de 2026 (72 votos a favor y 37 en contra) y enviada al Ejecutivo para su promulgación. Obliga a los tres órdenes de gobierno a habilitar y aceptar medios digitales para trámites y pagos de servicios públicos, faculta a Hacienda a definir sectores que dejarán de aceptar efectivo, y crea la CURP Digital y el Expediente Digital Ciudadano [22]. Debe confirmarse su publicación y entrada en vigor antes de citarla como vigente</td></tr>
+                                <tr><td><strong>Protección de datos</strong></td><td>La nueva Ley Federal de Protección de Datos Personales en Posesión de los Particulares entró en vigor el 21 de marzo de 2025; las funciones del INAI pasaron a la Secretaría Anticorrupción y Buen Gobierno, y el uso de datos para fines distintos a los del aviso original requiere un nuevo consentimiento [26]. Esto es relevante para el Metro (P8) y para cualquier padrón (P1, P2, P3)</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 04 ARQUITECTURA -->
+        <section id="arquitectura" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">04</span>
+                    <h2 class="section-title">Arquitectura de la Propuesta</h2>
+                    <p class="section-subtitle">Un ecosistema de ocho proyectos, no piezas sueltas</p>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-circle-nodes"></i> Cómo funciona el ecosistema</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <tbody>
+                                <tr><td><strong>La puerta de entrada a la economía popular</strong></td><td>MiPuesto (P1) y la red de abarrotes (P6) registran, dan certeza y abren el pago digital en la calle y en la colonia</td></tr>
+                                <tr><td><strong>La cadena patrimonial</strong></td><td>Nexum (P2) y la escritura digital (P3): el predio se regulariza, se escritura, entra al padrón predial y queda protegido con la alerta contra despojo</td></tr>
+                                <tr><td><strong>El rostro humano a distancia</strong></td><td>La atención P2P (P4) acompaña todos los trámites, y VialIA (P5) muestra resultados visibles en la calle</td></tr>
+                                <tr><td><strong>Ingresos no tarifarios</strong></td><td>Parquímetros (P7) y Metro Conectado (P8) generan ingresos con inversión privada</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-compass"></i> Tres principios que guían el diseño</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <tbody>
+                                <tr><td><strong>Inversión privada y pago por resultados</strong></td><td>De modo que la Ciudad no tenga que aportar presupuesto inicial en la mayoría de los proyectos</td></tr>
+                                <tr><td><strong>Complementar lo que ya existe</strong></td><td>Llave CDMX, Locatel, Bachetel, ecoParq, Mercomuna, Jornada Notarial, conectándose por interfaces documentadas</td></tr>
+                                <tr><td><strong>Medir desde el primer día</strong></td><td>Con línea base e indicadores públicos por proyecto</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-shield-halved"></i> Lineamientos transversales</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <tbody>
+                                <tr><td><strong>Soberanía de datos</strong></td><td>Los datos de la ciudadanía son de la Ciudad y permanecen en territorio nacional</td></tr>
+                                <tr><td><strong>Seguridad por diseño</strong></td><td>Cifrado, auditoría y pruebas de penetración independientes</td></tr>
+                                <tr><td><strong>Inclusión</strong></td><td>Registro asistido y canal presencial siempre disponible</td></tr>
+                                <tr><td><strong>Transferencia de conocimiento</strong></td><td>Al personal de la Ciudad</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 05 MAPA DE OPORTUNIDADES -->
+        <section id="mapa" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">05</span>
+                    <h2 class="section-title">Mapa de Oportunidades</h2>
+                    <p class="section-subtitle">Contribución de cada proyecto a los cuatro objetivos (valoración cualitativa, sujeta a validación)</p>
+                </div>
+                <div class="figures-grid">
+                    <div class="figure-card" style="grid-column: 1 / -1; max-width: 980px; margin: 0 auto 2rem;">
+                        <div class="figure-header">Figura 2 · Contribución de cada proyecto a los cuatro objetivos</div>
+                        <img src="assets/fig02-mapa-oportunidades.png" alt="Mapa de oportunidades CDMX" class="figure-img">
+                        <div class="figure-caption">Cuatro objetivos: <strong>impulsar la economía</strong> · <strong>aumentar la recaudación</strong> · <strong>mejorar la calidad de vida</strong> · <strong>fortalecer la imagen del gobierno</strong>. Destacan P1 y P2 en recaudación muy alta, P6 en economía muy alta y P3/P5 con alto valor en calidad de vida e imagen de gobierno. Es una valoración cualitativa del equipo, sujeta a validación con datos de la Ciudad.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 06 PORTAFOLIO P1-P8 -->
+        <section id="portafolio" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">06</span>
+                    <h2 class="section-title">Portafolio de Proyectos P1 – P8</h2>
+                    <p class="section-subtitle">Fichas completas organizadas por frente: problema, solución, datos de mercado, impactos, modelo, inversión, piloto, indicadores, riesgos y aporte del socio tecnológico</p>
+                </div>
+
+                <div id="espacio-publico" class="portfolio-category">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-store"></i></div>
+                        <div>
+                            <h3 class="category-title">Orden del Espacio Público y Economía Popular</h3>
+                            <p class="category-subtitle">Padrón digital del comercio en vía pública y la tienda de barrio conectada</p>
+                        </div>
+                    </div>
+                    <div class="full-fichas">
+                        <article class="full-ficha" id="ficha-P1"></article>
+                        <article class="full-ficha" id="ficha-P6"></article>
+                    </div>
+                </div>
+
+                <div id="patrimonio" class="portfolio-category">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-file-signature"></i></div>
+                        <div>
+                            <h3 class="category-title">Certeza Patrimonial y Recaudación</h3>
+                            <p class="category-subtitle">Regularización predial, escritura digital y alerta contra el despojo</p>
+                        </div>
+                    </div>
+                    <div class="full-fichas">
+                        <article class="full-ficha" id="ficha-P2"></article>
+                        <article class="full-ficha" id="ficha-P3"></article>
+                    </div>
+                </div>
+
+                <div id="atencion" class="portfolio-category">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-headset"></i></div>
+                        <div>
+                            <h3 class="category-title">Atención Ciudadana y Servicios Urbanos</h3>
+                            <p class="category-subtitle">Ventanilla por video y detección de baches con IA — la entrada de bajo riesgo</p>
+                        </div>
+                    </div>
+                    <div class="full-fichas">
+                        <article class="full-ficha full-ficha-highlight" id="ficha-P4"></article>
+                        <article class="full-ficha full-ficha-highlight" id="ficha-P5"></article>
+                    </div>
+                </div>
+
+                <div id="movilidad" class="portfolio-category">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-car"></i></div>
+                        <div>
+                            <h3 class="category-title">Movilidad e Ingresos No Tarifarios</h3>
+                            <p class="category-subtitle">Parquímetros con empleo social y Metro Conectado — segunda fase</p>
+                        </div>
+                    </div>
+                    <div class="full-fichas">
+                        <article class="full-ficha" id="ficha-P7"></article>
+                        <article class="full-ficha" id="ficha-P8"></article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 07 RECAUDACION -->
+        <section id="recaudacion" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">07</span>
+                    <h2 class="section-title">Palancas de Recaudación y Lógica Económica</h2>
+                    <p class="section-subtitle">Cuatro mecanismos para aumentar los ingresos propios, sin nuevos impuestos ni subir tasas</p>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-key"></i> Palancas de recaudación</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead><tr><th>Palanca</th><th>Qué cambia</th><th>Proyectos</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>Ampliar la base</strong></td><td>Incorporar comerciantes, predios y construcciones que hoy no están en ningún padrón</td><td>P1, P2, P3</td></tr>
+                                <tr><td><strong>Elevar el cumplimiento</strong></td><td>Pago fácil por QR, en la tienda de barrio o desde el celular; recordatorios; trámites sin fila</td><td>P1, P2, P4, P6</td></tr>
+                                <tr><td><strong>Reducir costo y fuga</strong></td><td>Menos efectivo e intermediarios; gasto de bacheo mejor dirigido; apoyos sociales conciliados</td><td>P1, P4, P5, P6</td></tr>
+                                <tr><td><strong>Crear ingresos nuevos</strong></td><td>Concesiones y servicios con inversión privada: estacionamiento, medios digitales, servicios registrales</td><td>P3, P7, P8</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-chart-column"></i> 7.1 Tamaño de cada oportunidad — órdenes de magnitud para decidir prioridades, no proyecciones financieras</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead><tr><th>Proyecto</th><th>Dato oficial de referencia</th><th>Escenario de trabajo</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>P1 MiPuesto</strong></td><td>2.2 millones en informalidad [4]; meta de 4,500 comerciantes en la primera fase [5]</td><td>195 a 585 mdp anuales en aprovechamientos (50 mil a 150 mil permisos)</td></tr>
+                                <tr><td><strong>P2 Nexum</strong></td><td>294,660 viviendas sin escritura [8]; predial +23.7% [1]</td><td>44 a 147 mdp anuales en comisiones privadas al regularizar 10% por año, más predial incremental</td></tr>
+                                <tr><td><strong>P3 Escritura digital</strong></td><td>Escriturar cuesta 5% a 8% del valor; inscripción de 3 semanas a 3 meses [8]</td><td>Reducción de tiempo y costo; ingreso por trámite digital</td></tr>
+                                <tr><td><strong>P4 Atención P2P</strong></td><td>5.3 millones de personas atendidas por Locatel en 11 meses [12]</td><td>Unos 408 mil pesos anuales por cada 100 agentes</td></tr>
+                                <tr><td><strong>P5 VialIA</strong></td><td>1,500 mdp en Bachetón y 2,250 mdp en el Plan Integral [10][11]</td><td>Hasta unos 1 mdp anual por contrato Premium; ahorro estimado de 10 a 20 veces [27]</td></tr>
+                                <tr><td><strong>P6 Red de abarrotes</strong></td><td>900 mdp de Mercomuna en 2025 y más de 30 mil comercios registrados [24]</td><td>Unos 3 mdp mensuales en comisiones con 5,000 tiendas</td></tr>
+                                <tr><td><strong>P7 Parquímetros</strong></td><td>ecoParq: más de 525 mdp en 2024 [14]</td><td>190 a 380 mdp brutos anuales con 20 mil cajones; 60% para alcaldías</td></tr>
+                                <tr><td><strong>P8 Metro Conectado</strong></td><td>1,241.6 millones de viajes en 2025 [17]; publicidad valuada en unos 231 mdp al año [18]</td><td>Por definir con piloto; inversión de fase 1 de unos 99 mdp [27]</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-square-root-variable"></i> 7.2 Cómo estimar el potencial con datos reales</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <tbody>
+                                <tr><td>Para cada concepto: <strong>incremento = base actual × (cumplimiento objetivo − cumplimiento actual) + ingresos por nuevos servicios − costo del proyecto</strong>. El primer entregable de cada piloto es una línea base con datos de la Tesorería y de la dependencia responsable</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 08 CONTRATACION -->
+        <section id="contratacion" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">08</span>
+                    <h2 class="section-title">Esquemas de Contratación y Marco Jurídico</h2>
+                    <p class="section-subtitle">La modalidad se elige proyecto por proyecto con revisión de la Consejería Jurídica</p>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-file-signature"></i> 8.1 Modalidades posibles</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead><tr><th>Modalidad</th><th>Cuándo conviene</th><th>Consideraciones</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>Convenio de colaboración / piloto sin costo</strong></td><td>VialIA, Atención P2P, MiPuesto, red de abarrotes</td><td>Rápido de firmar; permite demostrar resultados antes de comprometer presupuesto</td></tr>
+                                <tr><td><strong>Contrato de servicios / licenciamiento (SaaS)</strong></td><td>Atención P2P, VialIA, MiPuesto, Nexum</td><td>Costo predecible; la Ciudad conserva la propiedad de los datos</td></tr>
+                                <tr><td><strong>Comisión privada por operación</strong></td><td>Red de abarrotes, pagos de MiPuesto, Nexum</td><td>Sin gasto público; requiere reglas de tarifas y niveles de servicio</td></tr>
+                                <tr><td><strong>Permiso administrativo temporal o concesión</strong></td><td>Parquímetros, Metro Conectado</td><td>Estudio de viabilidad, procedimiento formal y plazos que pueden rebasar la administración</td></tr>
+                                <tr><td><strong>Asociación con notarios y banca</strong></td><td>Nexum, escritura digital, red de abarrotes</td><td>El notario conserva la fe pública; el banco aliado es titular de los fondos</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-gavel"></i> 8.2 Marco normativo a revisar</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <tbody>
+                                <tr><td>Ley de Operación e Innovación Digital para la Ciudad de México, atribuciones de la ADIP y normativa de firma electrónica</td></tr>
+                                <tr><td>Código Fiscal de la Ciudad de México (aprovechamientos por uso de vía pública, predial, derechos registrales y tarifas de estacionamiento)</td></tr>
+                                <tr><td>Normativa de comercio en vía pública y atribuciones de la Secretaría de Gobierno y de las alcaldías</td></tr>
+                                <tr><td>Ley Registral, Ley del Notariado y normativa catastral de la Ciudad</td></tr>
+                                <tr><td>Ley de Movilidad de la Ciudad de México (parquímetros y reparto de ingresos) y normativa del STC Metro sobre permisos y concesiones</td></tr>
+                                <tr><td>Ley de Adquisiciones y Ley de Obras Públicas de la Ciudad, y normativa de asociaciones público-privadas</td></tr>
+                                <tr><td>Protección de datos personales: ley de la Ciudad para sujetos obligados y nueva ley federal para particulares [26]</td></tr>
+                                <tr><td>Ley de Economía Digital para Pagos Digitales y Electrónicos, una vez publicada [22], y regulación financiera de pagos y corresponsales</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-circle-info"></i> Nota</div>
+                    <div class="table-responsive">
+                        <table class="data-table"><tbody>
+                            <tr><td>Se recomienda que la Consejería Jurídica o un despacho especializado confirme el esquema de cada proyecto antes de su formalización.</td></tr>
+                        </tbody></table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 09 PRIORIZACION -->
+        <section id="priorizacion" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">09</span>
+                    <h2 class="section-title">Priorización</h2>
+                    <p class="section-subtitle">Proyectos ordenados por olas, según riesgo, costo para la Ciudad y rapidez de resultados</p>
+                </div>
+
+                <div class="figures-grid">
+                    <div class="figure-card" style="grid-column: 1 / -1; max-width: 980px; margin: 0 auto 2rem;">
+                        <div class="figure-header">Figura 3 · Mapa de priorización: impacto potencial frente a complejidad (valoración cualitativa del equipo)</div>
+                        <img src="assets/fig03-priorizacion.png" alt="Mapa de priorización CDMX" class="figure-img">
+                        <div class="figure-caption">Las fechas las define la Jefatura de Gobierno. Entrada (P4, P5), de fondo (P1, P2, P3), piloto con convenio (P6) y segunda fase (P7, P8).</div>
+                    </div>
+                </div>
+
+                <div class="roadmap-grid">
+                    <div class="roadmap-card ola1">
+                        <div class="roadmap-card-header"><span class="roadmap-badge">Ola 1</span></div>
+                        <div class="roadmap-body">
+                            <h3>Entrada</h3>
+                            <p><strong>P5 VialIA y P4 Atención P2P</strong></p>
+                            <ul class="roadmap-list"><li>Bajo riesgo, piloto gratuito o de bajo costo, tecnología ya funcionando y resultados visibles en semanas</li></ul>
+                        </div>
+                    </div>
+                    <div class="roadmap-card ola2">
+                        <div class="roadmap-card-header"><span class="roadmap-badge">Ola 2</span></div>
+                        <div class="roadmap-body">
+                            <h3>De fondo</h3>
+                            <p><strong>P1 MiPuesto y P2 Nexum, con P3 Escritura digital como extensión</strong></p>
+                            <ul class="roadmap-list"><li>Atienden prioridades declaradas (reordenamiento y regularización) y tienen el mayor impacto en recaudación</li></ul>
+                        </div>
+                    </div>
+                    <div class="roadmap-card ola3">
+                        <div class="roadmap-card-header"><span class="roadmap-badge">Ola 3</span></div>
+                        <div class="roadmap-body">
+                            <h3>Piloto con convenio</h3>
+                            <p><strong>P6 Red de abarrotes</strong></p>
+                            <ul class="roadmap-list"><li>Modelo privado que se apoya en Mercomuna y en la nueva Ley de Economía Digital</li></ul>
+                        </div>
+                    </div>
+                    <div class="roadmap-card ola4">
+                        <div class="roadmap-card-header"><span class="roadmap-badge">Ola 4</span></div>
+                        <div class="roadmap-body">
+                            <h3>Segunda fase</h3>
+                            <p><strong>P7 Parquímetros y P8 Metro Conectado</strong></p>
+                            <ul class="roadmap-list"><li>Inversión alta y concesiones complejas; requieren socio financiero y la confianza construida en las olas anteriores</li></ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-wrapper" style="margin-top:2rem;">
+                    <div class="table-title"><i class="fas fa-table-cells"></i> 9.1 Matriz de priorización</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead><tr><th>Proyecto</th><th>Impacto en ingresos</th><th>Impacto ciudadano</th><th>Complejidad</th><th>Inversión de la Ciudad</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>P1</strong> MiPuesto</td><td>Alto</td><td>Alto</td><td>Alta (política)</td><td>Baja</td></tr>
+                                <tr><td><strong>P2</strong> Nexum</td><td>Alto</td><td>Medio</td><td>Media</td><td>Baja</td></tr>
+                                <tr><td><strong>P3</strong> Escritura digital</td><td>Medio</td><td>Alto</td><td>Alta</td><td>Media</td></tr>
+                                <tr><td><strong>P4</strong> Atención P2P</td><td>Bajo</td><td>Alto</td><td>Baja</td><td>Baja</td></tr>
+                                <tr><td><strong>P5</strong> VialIA</td><td>Bajo (ahorro)</td><td>Alto</td><td>Baja</td><td>Nula en piloto</td></tr>
+                                <tr><td><strong>P6</strong> Red de abarrotes</td><td>Medio</td><td>Alto</td><td>Media</td><td>Nula</td></tr>
+                                <tr><td><strong>P7</strong> Parquímetros</td><td>Alto</td><td>Medio</td><td>Alta</td><td>Nula (privada)</td></tr>
+                                <tr><td><strong>P8</strong> Metro Conectado</td><td>Medio</td><td>Medio</td><td>Alta</td><td>Nula (privada)</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10 GRUPO CSI -->
+        <section id="csi" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">10</span>
+                    <h2 class="section-title">Socio Estratégico: Grupo CSI</h2>
+                    <p class="section-subtitle">Capacidades que el gobierno suele exigir antes de contratar</p>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-building"></i> Perfil del aliado</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <tbody>
+                                <tr><td>Grupo CSI se presenta como una empresa de identidad digital, contact center y software para banca y gobierno, que opera mediante tres unidades (<strong>ART, Inovitz y Buzzword</strong>) y ofrece verificación de identidad, contact center omnicanal, fábrica de software, mesa de ayuda y gestión documental [28]. Su perfil complementa al equipo proponente en tres frentes que el gobierno suele exigir antes de contratar: capacidad operativa a escala, experiencia con instituciones reguladas y respaldo corporativo</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-puzzle-piece"></i> Capacidades de Grupo CSI y dónde aportan</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead><tr><th>Capacidad</th><th>Proyectos donde aporta</th><th>Qué resuelve</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>Verificación de identidad</strong></td><td>P1, P2, P3, P6, P8</td><td>Altas confiables en padrones y firma de escrituras; menos fraude</td></tr>
+                                <tr><td><strong>Contact center omnicanal</strong></td><td>P4, P1, P7</td><td>Agentes para la ventanilla por video y atención a comerciantes y usuarios</td></tr>
+                                <tr><td><strong>Fábrica de software</strong></td><td>P5, P6, P7</td><td>Integraciones con Locatel, Tesorería y sistemas de alcaldías</td></tr>
+                                <tr><td><strong>Mesa de ayuda</strong></td><td>Todos</td><td>Soporte a usuarios internos, notarios, tenderos y cuadrillas</td></tr>
+                                <tr><td><strong>Gestión documental</strong></td><td>P2, P3</td><td>Digitalización de expedientes y acervos registrales</td></tr>
+                                <tr><td><strong>Relación con banca</strong></td><td>P2, P6</td><td>Banco aliado para la red de pagos e informes para crédito hipotecario</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-circle-info"></i> Nota</div>
+                    <div class="table-responsive">
+                        <table class="data-table"><tbody>
+                            <tr><td>Antes de presentar a Grupo CSI como socio formal conviene confirmar con la empresa sus referencias en gobierno, certificaciones de seguridad de la información y capacidad de coinversión, en particular para P7 y P8.</td></tr>
+                        </tbody></table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11 VALOR POLITICO -->
+        <section id="valor" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">11</span>
+                    <h2 class="section-title">Valor Político e Institucional</h2>
+                    <p class="section-subtitle">Resultados visibles, medibles y comunicables, alineados con las prioridades públicas de la administración</p>
+                </div>
+
+                <div class="valor-grid">
+                    <div class="valor-card">
+                        <div class="valor-icon"><i class="fas fa-scale-balanced"></i></div>
+                        <h4>Sin Nuevos Impuestos</h4>
+                        <p>El crecimiento de ingresos viene de facilitar el pago y ampliar la base, coherente con el compromiso de no subir el predial [2]</p>
+                    </div>
+                    <div class="valor-card">
+                        <div class="valor-icon"><i class="fas fa-people-roof"></i></div>
+                        <h4>Orden con Derechos</h4>
+                        <p>MiPuesto ordena el espacio público y da certeza al comerciante, en lugar de solo retirar puestos</p>
+                    </div>
+                    <div class="valor-card">
+                        <div class="valor-icon"><i class="fas fa-house-lock"></i></div>
+                        <h4>Contra el Despojo</h4>
+                        <p>La alerta patrimonial y la escritura digital dan herramientas concretas a la Defensoría contra el Despojo [9]</p>
+                    </div>
+                    <div class="valor-card">
+                        <div class="valor-icon"><i class="fas fa-road"></i></div>
+                        <h4>Calles que se Ven</h4>
+                        <p>VialIA convierte la inversión en bacheo en un mapa público que demuestra resultados</p>
+                    </div>
+                    <div class="valor-card">
+                        <div class="valor-icon"><i class="fas fa-person-dress"></i></div>
+                        <h4>Economía de Barrio y Mujeres</h4>
+                        <p>La red de abarrotes y los parquímetros con supervisoras jefas de familia benefician a sectores encabezados mayoritariamente por mujeres [25][27]</p>
+                    </div>
+                    <div class="valor-card">
+                        <div class="valor-icon"><i class="fas fa-lightbulb"></i></div>
+                        <h4>Ciudad Innovadora</h4>
+                        <p>La Ciudad puede ser la primera en el país con un padrón digital del comercio en vía pública y una alerta patrimonial abierta a toda la población</p>
+                    </div>
+                </div>
+
+                <div class="table-wrapper" style="margin-top:2rem;">
+                    <div class="table-title"><i class="fas fa-circle-info"></i> Nota</div>
+                    <div class="table-responsive">
+                        <table class="data-table"><tbody>
+                            <tr><td>La decisión de adoptar, modificar o descartar cualquier proyecto corresponde a las autoridades; esta propuesta busca darles opciones fundamentadas.</td></tr>
+                        </tbody></table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 12 RIESGOS -->
+        <section id="riesgos" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">12</span>
+                    <h2 class="section-title">Riesgos y Mitigación</h2>
+                    <p class="section-subtitle">Cada riesgo identificado tiene una mitigación concreta</p>
+                </div>
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-shield-halved"></i> Matriz de riesgos</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead><tr><th>Riesgo</th><th>Descripción</th><th>Mitigación</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>Político y gremial</strong></td><td>Resistencia de líderes de comercio, cuidacoches o grupos que hoy cobran informalmente</td><td>Diseño con organizaciones dispuestas; beneficios visibles para el comerciante; comunicación centrada en derechos</td></tr>
+                                <tr><td><strong>Jurídico</strong></td><td>Esquemas de pago por resultados, concesiones y validez de documentos digitales</td><td>Revisión previa con la Consejería Jurídica; pilotos con figuras ya previstas en la ley</td></tr>
+                                <tr><td><strong>Concesiones vigentes</strong></td><td>Publicidad del Metro concesionada hasta 2030; concesionarias de ecoParq</td><td>Diseñar en coordinación con los titulares actuales y no en competencia</td></tr>
+                                <tr><td><strong>Datos y privacidad</strong></td><td>Padrones sensibles (comerciantes, propietarios, usuarios del Metro)</td><td>Datos propiedad de la Ciudad; anonimización; sin venta de datos personales; auditorías externas</td></tr>
+                                <tr><td><strong>Seguridad de la información</strong></td><td>Ataques, fraude registral o falsificación de permisos</td><td>Cifrado, QR verificables, pruebas de penetración y monitoreo continuo</td></tr>
+                                <tr><td><strong>Adopción</strong></td><td>Brecha digital y desconfianza</td><td>Registro asistido en campo; canal presencial siempre disponible; pagos en la tienda de barrio</td></tr>
+                                <tr><td><strong>Financiero</strong></td><td>Demanda menor a la prevista (parquímetros, Metro)</td><td>Estudios de demanda por polígono y pilotos acotados antes de invertir a escala</td></tr>
+                                <tr><td><strong>Continuidad</strong></td><td>Contratos que rebasan la administración</td><td>Cláusulas de salida ordenada y transferencia de datos y conocimiento</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 13 SIGUIENTES PASOS -->
+        <section id="pasos" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">13</span>
+                    <h2 class="section-title">Siguientes Pasos para la Reunión</h2>
+                    <p class="section-subtitle">Una ruta clara para iniciar</p>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-list-check"></i> Ruta propuesta</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <tbody>
+                                <tr><td style="width:70px"><strong>1</strong></td><td>Presentación ejecutiva de los ocho proyectos y selección, por parte del equipo de la Jefa de Gobierno, de los que sean de interés inmediato</td></tr>
+                                <tr><td><strong>2</strong></td><td>Autorización de los pilotos de entrada (VialIA con dos motocicletas y Atención P2P en una ventanilla), que no requieren presupuesto</td></tr>
+                                <tr><td><strong>3</strong></td><td>Mesas técnicas con la SAF, la Secretaría de Gobierno, Sobse, el Registro Público y la ADIP para los proyectos de fondo</td></tr>
+                                <tr><td><strong>4</strong></td><td>Acuerdo de confidencialidad y colaboración para intercambiar información y diseñar los pilotos</td></tr>
+                                <tr><td><strong>5</strong></td><td>Entrega de una propuesta técnico-económica detallada por cada proyecto seleccionado</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-circle-info"></i> Nota</div>
+                    <div class="table-responsive">
+                        <table class="data-table"><tbody>
+                            <tr><td>[Insertar aquí casos de referencia, certificaciones y datos de contacto institucionales del equipo proponente y de Grupo CSI antes de enviar.]</td></tr>
+                        </tbody></table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GLOSARIO -->
+        <section id="glosario" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">G</span>
+                    <h2 class="section-title">Glosario de Términos</h2>
+                    <p class="section-subtitle">Cada término tiene un enlace para ir al contexto donde se usa en la propuesta</p>
+                </div>
+
+                <div class="glos-index">
+                    <a href="#g-alerta">Alerta patrimonial</a>
+                    <a href="#g-aprovechamiento">Aprovechamiento</a>
+                    <a href="#g-app">APP</a>
+                    <a href="#g-bachetel">Bachetel</a>
+                    <a href="#g-base">Base gravable</a>
+                    <a href="#g-codi">CoDi</a>
+                    <a href="#g-comodato">Comodato</a>
+                    <a href="#g-contact">Contact center omnicanal</a>
+                    <a href="#g-concesion">Concesión</a>
+                    <a href="#g-cuenta">Cuenta predial</a>
+                    <a href="#g-cury">CURP Digital</a>
+                    <a href="#g-defensoria">Defensoría contra el Despojo</a>
+                    <a href="#g-enigh">ENIGH</a>
+                    <a href="#g-enif">ENIF</a>
+                    <a href="#g-enoe">ENOE · TIL1</a>
+                    <a href="#g-ecoparq">ecoParq</a>
+                    <a href="#g-escritura">Escritura digital</a>
+                    <a href="#g-fabrica">Fábrica de software</a>
+                    <a href="#g-folio">Folio real electrónico</a>
+                    <a href="#g-jornada">Jornada Notarial</a>
+                    <a href="#g-kyc">KYC</a>
+                    <a href="#g-llave">Llave CDMX · Llave MX</a>
+                    <a href="#g-linea">Línea base</a>
+                    <a href="#g-locatel">Locatel</a>
+                    <a href="#g-ley">Ley de Economía Digital</a>
+                    <a href="#g-marca">Marca blanca</a>
+                    <a href="#g-mdp">mdp</a>
+                    <a href="#g-mercomuna">Mercomuna</a>
+                    <a href="#g-mipuesto">MiPuesto CDMX</a>
+                    <a href="#g-nexum">Nexum</a>
+                    <a href="#g-palanca">Palanca de recaudación</a>
+                    <a href="#g-p2p">P2P</a>
+                    <a href="#g-patr">Permiso Administrativo Temporal Revocable</a>
+                    <a href="#g-saas">SaaS</a>
+                    <a href="#g-sector">Sector informal</a>
+                    <a href="#g-soberania">Soberanía de datos</a>
+                    <a href="#g-tarifa">Tarifa social</a>
+                </div>
+
+                <div class="glos-grid">
+                    <div class="glos-card" id="g-alerta">
+                        <div class="glos-head"><h3>Alerta patrimonial <span>(P3)</span></h3><a href="#patrimonio" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Notificación al propietario por SMS, correo o WhatsApp ante cualquier solicitud sobre el folio de su inmueble. La versión básica es gratuita y es la herramienta central contra el despojo y el fraude inmobiliario.</p>
+                    </div>
+                    <div class="glos-card" id="g-aprovechamiento">
+                        <div class="glos-head"><h3>Aprovechamiento <span>(Código Fiscal CDMX)</span></h3><a href="#espacio-publico" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Pago que realiza quien usa la vía pública. Con MiPuesto (P1) los cobros informales a intermediarios se convierten en aprovechamientos para la Ciudad y las alcaldías; cuotas de referencia: unos 13 pesos diarios por permiso semifijo y de 38 a 74 pesos por puesto fijo [27].</p>
+                    </div>
+                    <div class="glos-card" id="g-app">
+                        <div class="glos-head"><h3>APP <span>(Asociación Público-Privada)</span></h3><a href="#contratacion" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Esquema contractual en el que el sector privado financia, construye u opera un servicio a cambio de pagos, ingresos o concesión a largo plazo. Requiere estudio de viabilidad y su normativa es parte del marco jurídico a revisar.</p>
+                    </div>
+                    <div class="glos-card" id="g-bachetel">
+                        <div class="glos-head"><h3>Bachetel <span>(Locatel)</span></h3><a href="#atencion" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Chatbot de Locatel por WhatsApp para reportar baches; genera un folio de atención [12]. Es un canal de reporte reactivo: VialIA (P5) lo complementa con un inventario continuo y verifica que las reparaciones se hayan hecho.</p>
+                    </div>
+                    <div class="glos-card" id="g-base">
+                        <div class="glos-head"><h3>Base gravable</h3><a href="#patrimonio" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Valor sobre el que se calcula el predial. Nexum (P2) la amplía al incorporar predios y construcciones no registradas; la SAF puede verla en su tablero junto con la recaudación incremental.</p>
+                    </div>
+                    <div class="glos-card" id="g-codi">
+                        <div class="glos-head"><h3>CoDi <span>(Banxico)</span></h3><a href="#espacio-publico" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Plataforma de Banxico para cobrar o pagar mediante códigos QR en tiempo real, sin costo para el comprador. Una de las opciones de pago de aprovechamientos en MiPuesto (P1) y en la red de abarrotes (P6).</p>
+                    </div>
+                    <div class="glos-card" id="g-comodato">
+                        <div class="glos-head"><h3>Comodato</h3><a href="#espacio-publico" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Prestación de uso de un bien sin cobro, con obligación de devolverlo. Las terminales de la red de abarrotes (P6) se entregan así: sin costo para la tienda y financiadas con comisiones de centavos por operación.</p>
+                    </div>
+                    <div class="glos-card" id="g-contact">
+                        <div class="glos-head"><h3>Contact center omnicanal <span>(Grupo CSI)</span></h3><a href="#csi" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Operación de agentes de atención en múltiples canales (teléfono, chat, video). Capacidad de Grupo CSI [28] para la ventanilla por video (P4) y la atención a comerciantes (P1) y usuarios (P7).</p>
+                    </div>
+                    <div class="glos-card" id="g-concesion">
+                        <div class="glos-head"><h3>Concesión</h3><a href="#contratacion" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Autorización para operar un servicio o un espacio público (parquímetros, publicidad del Metro). Define el reparto de ingresos y los plazos; los contratos largos pueden rebasar la administración, por lo que requieren cláusulas de salida ordenada.</p>
+                    </div>
+                    <div class="glos-card" id="g-cuenta">
+                        <div class="glos-head"><h3>Cuenta predial</h3><a href="#patrimonio" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Registro de cada predio en la Tesorería para el cobro del predial. El alta de cuentas nuevas —junto con la actualización catastral— es el resultado central del flujo de Nexum (P2).</p>
+                    </div>
+                    <div class="glos-card" id="g-cury">
+                        <div class="glos-head"><h3>CURP Digital y Expediente Digital Ciudadano</h3><a href="#anexos" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Identidad y documentos digitales creados por la Ley de Economía Digital [22]. Son línea de crecimiento futuro: integrarlos a los trámites digitales de la Ciudad conforme se publiquen y reglamenten.</p>
+                    </div>
+                    <div class="glos-card" id="g-defensoria">
+                        <div class="glos-head"><h3>Defensoría contra el Despojo</h3><a href="#patrimonio" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Instancia anunciada por la Jefa de Gobierno junto con el plan de regularización más grande de la capital [9]. La alerta patrimonial y la escritura digital (P3) le dan herramientas concretas: «no habrá espacio para redes de despojo ni cárteles inmobiliarios».</p>
+                    </div>
+                    <div class="glos-card" id="g-enigh">
+                        <div class="glos-head"><h3>ENIGH <span>(INEGI)</span></h3><a href="#diagnostico" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Encuesta Nacional de Ingresos y Gastos de los Hogares. Fuente del dato de 294,660 viviendas propias sin escrituras en la Ciudad (16.5%), base de Nexum (P2) y de la escritura digital (P3) [8].</p>
+                    </div>
+                    <div class="glos-card" id="g-enif">
+                        <div class="glos-head"><h3>ENIF <span>(Banxico-INEGI)</span></h3><a href="#diagnostico" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Encuesta Nacional de Inclusión Financiera. Fuente del dato de que 85.5% de las compras menores a 500 pesos se pagan en efectivo, con tendencia a la baja (90.1% en 2021) [23].</p>
+                    </div>
+                    <div class="glos-card" id="g-enoe">
+                        <div class="glos-head"><h3>ENOE · TIL1 <span>(INEGI)</span></h3><a href="#diagnostico" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Encuesta Nacional de Ocupación y Empleo; la TIL1 es la tasa de informalidad laboral. En la Ciudad es de 45.3% (2.2 millones de personas), más alta que el 44.1% de un año antes [4]. Véase la Figura 1.</p>
+                    </div>
+                    <div class="glos-card" id="g-ecoparq">
+                        <div class="glos-head"><h3>ecoParq <span>(Semovi)</span></h3><a href="#movilidad" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Sistema de parquímetros que opera en 4 alcaldías: 1,787 equipos y 30,208 cajones en 9 polígonos (2023) y más de 525 mdp recaudados en 2024 [13][14]. P7 extiende el modelo a 10 alcaldías más con tarifa social.</p>
+                    </div>
+                    <div class="glos-card" id="g-escritura">
+                        <div class="glos-head"><h3>Escritura digital</h3><a href="#patrimonio" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Digitalización del ciclo notarial completo manteniendo la fe pública del notario: preparación, firma electrónica avanzada con sellado de tiempo, pago de impuestos, ingreso al Registro, consulta y certificados, con verificación por QR (P3).</p>
+                    </div>
+                    <div class="glos-card" id="g-fabrica">
+                        <div class="glos-head"><h3>Fábrica de software <span>(Grupo CSI)</span></h3><a href="#csi" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Capacidad de desarrollo e integración de Grupo CSI [28]: integraciones con Locatel, la Tesorería y los sistemas de las alcaldías (P5, P6, P7).</p>
+                    </div>
+                    <div class="glos-card" id="g-folio">
+                        <div class="glos-head"><h3>Folio real electrónico</h3><a href="#patrimonio" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Registro digital único de cada propiedad en el Registro Público, con todo su historial (inscripciones, gravámenes, traspasos). Su grado de digitalización en la Ciudad es una de las preguntas del Anexo A; sobre él se construye P3.</p>
+                    </div>
+                    <div class="glos-card" id="g-jornada">
+                        <div class="glos-head"><h3>Jornada Notarial</h3><a href="#patrimonio" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Programa con descuentos de 10% a 60% para escrituración y de 40% a 80% para sucesiones [8]. La demanda existe; falta reducir fricción, que es lo que aporta la escritura digital (P3), diseñada con el Colegio de Notarios, no en su contra.</p>
+                    </div>
+                    <div class="glos-card" id="g-kyc">
+                        <div class="glos-head"><h3>KYC <span>(Know Your Customer)</span></h3><a href="#csi" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Verificación de identidad del titular para altas confiables y menos fraude. Grupo CSI la aporta en los padrones de comerciantes (P1), propietarios (P2) y tenderos (P6), y en la firma de escrituras [28].</p>
+                    </div>
+                    <div class="glos-card" id="g-llave">
+                        <div class="glos-head"><h3>Llave CDMX · Llave MX</h3><a href="#atencion" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Identidad digital de la Ciudad (ADIP) y del gobierno federal. Llave MX supera los 28 millones de cuentas —2.16 millones en la Ciudad— e integra 242 sistemas de gobierno [21]. La atención P2P (P4) se integra con ella para identificar al ciudadano.</p>
+                    </div>
+                    <div class="glos-card" id="g-linea">
+                        <div class="glos-head"><h3>Línea base</h3><a href="#recaudacion" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Foto inicial de un indicador antes del proyecto (recaudación, ocupación, cartera). Sin ella no se puede demostrar después si el proyecto sirvió. Es el primer entregable de cada piloto y de cada estudio de demanda (sección 7.2).</p>
+                    </div>
+                    <div class="glos-card" id="g-locatel">
+                        <div class="glos-head"><h3>Locatel</h3><a href="#atencion" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Línea de atención de la Ciudad: 5.3 millones de personas atendidas, 177 mil trámites digitales y 744 mil folios canalizados entre octubre de 2024 y agosto de 2025 [12]. La atención P2P (P4) cubre el hueco que queda: la atención humana a distancia con revisión de documentos.</p>
+                    </div>
+                    <div class="glos-card" id="g-ley">
+                        <div class="glos-head"><h3>Ley de Economía Digital <span>(federal)</span></h3><a href="#diagnostico" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Ley de Economía Digital para Pagos Digitales y Electrónicos, aprobada por el Senado el 20 de octubre de 2026 (72 votos a favor y 37 en contra) [22]. Obliga a los tres órdenes de gobierno a aceptar medios digitales y crea la CURP Digital; debe confirmarse su publicación antes de citarla como vigente.</p>
+                    </div>
+                    <div class="glos-card" id="g-marca">
+                        <div class="glos-head"><h3>Marca blanca</h3><a href="#atencion" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Plataforma operada por el proveedor pero con la identidad visual de la Ciudad o de cada alcaldía. Modalidad de la ventanilla por video (P4), con cuota única de implementación de 16 mil a 50 mil pesos [27].</p>
+                    </div>
+                    <div class="glos-card" id="g-mdp">
+                        <div class="glos-head"><h3>mdp <span>(millones de pesos)</span></h3><a href="#recaudacion" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Unidad usada en los escenarios económicos de la propuesta: por ejemplo, 195 a 585 mdp anuales en aprovechamientos (P1) o 190 a 380 mdp brutos en parquímetros (P7). Son escalas de trabajo, no proyecciones financieras.</p>
+                    </div>
+                    <div class="glos-card" id="g-mercomuna">
+                        <div class="glos-head"><h3>Mercomuna</h3><a href="#espacio-publico" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Programa de la Ciudad que canaliza apoyos canjeables en tiendas de barrio: 900 mdp en 2025 para 335 mil familias y más de 30 mil comercios registrados; en 2026 se amplía a 700 mil familias [24]. La red de abarrotes (P6) digitaliza el canje de sus vales con QR y conciliación automática.</p>
+                    </div>
+                    <div class="glos-card" id="g-mipuesto">
+                        <div class="glos-head"><h3>MiPuesto CDMX</h3><a href="#espacio-publico" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Plataforma única para registrar, georreferenciar, autorizar y cobrar el uso de la vía pública (P1): permiso digital con QR verificable, mapa en tiempo real para la autoridad y pago desde el celular o en la tienda de barrio.</p>
+                    </div>
+                    <div class="glos-card" id="g-nexum">
+                        <div class="glos-head"><h3>Nexum</h3><a href="#patrimonio" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Capa digital que conecta al ciudadano, al notario y a la Tesorería para regularizar un predio en un solo flujo (P2): identificación, expediente digital, validación notarial, actualización catastral y alta de la cuenta predial. Reduce el costo para el ciudadano entre 60% y 70% [27].</p>
+                    </div>
+                    <div class="glos-card" id="g-palanca">
+                        <div class="glos-head"><h3>Palanca de recaudación</h3><a href="#recaudacion" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Mecanismo de ingreso adicional. La propuesta identifica cuatro: ampliar la base, elevar el cumplimiento, reducir costo y fuga, y crear ingresos nuevos. Ninguno implica crear impuestos ni subir tasas.</p>
+                    </div>
+                    <div class="glos-card" id="g-p2p">
+                        <div class="glos-head"><h3>P2P <span>(Peer-to-Peer)</span></h3><a href="#atencion" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Conexión directa entre dos dispositivos (par a par). La ventanilla por video (P4) funciona desde el navegador con un enlace o QR, sin instalar nada ni crear cuenta, con cola, horarios y grabación para trazabilidad.</p>
+                    </div>
+                    <div class="glos-card" id="g-patr">
+                        <div class="glos-head"><h3>Permiso Administrativo Temporal Revocable</h3><a href="#movilidad" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Figura bajo la cual ISA Corporativo opera la publicidad del Metro hasta el 30 de septiembre de 2030, sobre 46,921 espacios y con una contraprestación de 19.2 mdp mensuales [18]. Metro Conectado (P8) se diseña en coordinación con el titular, no en competencia.</p>
+                    </div>
+                    <div class="glos-card" id="g-saas">
+                        <div class="glos-head"><h3>SaaS <span>(Software as a Service)</span></h3><a href="#contratacion" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Software como servicio: el proveedor opera la plataforma y el cliente paga por licencia, usuario o transacción. Modalidad recomendada para MiPuesto (P1), Nexum (P2) y la atención P2P (P4); la Ciudad conserva la propiedad de los datos.</p>
+                    </div>
+                    <div class="glos-card" id="g-sector">
+                        <div class="glos-head"><h3>Sector informal</h3><a href="#diagnostico" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Negocios no registrados, distintos de la informalidad laboral total: 1.4 millones de personas en la Ciudad (27.9% de la ocupación) trabajan en ellos [4]. Es el universo que MiPuesto (P1) busca registrar y formalizar gradualmente.</p>
+                    </div>
+                    <div class="glos-card" id="g-soberania">
+                        <div class="glos-head"><h3>Soberanía de datos</h3><a href="#arquitectura" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Lineamiento transversal de la propuesta: los datos de la ciudadanía son de la Ciudad y permanecen en territorio nacional. Se complementa con seguridad por diseño, inclusión y transferencia de conocimiento.</p>
+                    </div>
+                    <div class="glos-card" id="g-tarifa">
+                        <div class="glos-head"><h3>Tarifa social <span>(P7)</span></h3><a href="#movilidad" class="glos-link">Ver contexto <i class="fas fa-arrow-right"></i></a></div>
+                        <p>Precio accesible del estacionamiento en las 10 alcaldías del plan: 10 pesos por hora, con suscripción mensual de 250 pesos y anual de 1,750 pesos para trabajadores [27], frente a los 13.60 pesos por hora de ecoParq en 2026 [16].</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ANEXOS -->
+        <section id="anexos" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">A·C</span>
+                    <h2 class="section-title">Anexos</h2>
+                    <p class="section-subtitle">Cuestionario de sondeo, fuentes y líneas de crecimiento futuro</p>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-clipboard-question"></i> Anexo A · Cuestionario para las dependencias</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead><tr><th>Dependencia</th><th>Información a solicitar</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>Secretaría de Administración y Finanzas y Tesorería</strong></td><td>Serie histórica de predial, aprovechamientos por uso de vía pública y derechos registrales · Número de cuentas prediales activas, con adeudo y sin valor catastral actualizado · Canales de pago actuales y porcentaje de pagos digitales</td></tr>
+                                <tr><td><strong>Secretaría de Gobierno y alcaldías</strong></td><td>Registros existentes de comercio en vía pública, cuotas vigentes y forma de cobro · Polígonos prioritarios del reordenamiento y alternativas de reubicación (por ejemplo, locales del Metro)</td></tr>
+                                <tr><td><strong>Registro Público, Consejería Jurídica y Colegio de Notarios</strong></td><td>Grado de digitalización del folio real y del ingreso electrónico de escrituras · Volumen anual de escrituras, sucesiones y casos de despojo atendidos</td></tr>
+                                <tr><td><strong>Sobse, Locatel y ADIP</strong></td><td>Reportes de baches por canal y tiempos de atención; inventario de la red primaria · Volumen de atención de Locatel por tema y trámites que todavía requieren visita presencial</td></tr>
+                                <tr><td><strong>Semovi, ecoParq y STC Metro</strong></td><td>Cajones, ocupación y recaudación por polígono; interés de otras alcaldías · Contratos vigentes de Wi-Fi, publicidad y servicios digitales en el Metro</td></tr>
+                                <tr><td><strong>Secretaría de Atención y Participación Ciudadana (Mercomuna)</strong></td><td>Comercios registrados, forma de los vales (impresos o digitales) y proceso de pago al comercio</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-book"></i> Anexo B · Fuentes consultadas</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead><tr><th style="width:80px">Ref.</th><th>Fuente</th></tr></thead>
+                            <tbody>
+                                <tr><td>[1]</td><td>La Razón y Excélsior. Recaudación récord de la CDMX en el primer semestre de 2026, 27 de julio de 2026</td></tr>
+                                <tr><td>[2]</td><td>Por Esto! Predial CDMX: Clara Brugada anuncia eliminación de multas y recargos (Segundo Informe), 14 de octubre de 2026</td></tr>
+                                <tr><td>[3]</td><td>Publimetro. Clara Brugada lleva al Congreso su Segundo Informe con énfasis en inversión pública, 31 de agosto de 2026</td></tr>
+                                <tr><td>[4]</td><td>INEGI. Encuesta Nacional de Ocupación y Empleo, Ciudad de México, segundo trimestre de 2026 (boletín del 25 de agosto de 2026)</td></tr>
+                                <tr><td>[5]</td><td>Expansión Política. CDMX busca reordenar el comercio en el Centro Histórico, 24 de marzo de 2026</td></tr>
+                                <tr><td>[6]</td><td>La Razón. Van por revisar estrategia ante alza de ambulantaje, 28 de julio de 2026</td></tr>
+                                <tr><td>[7]</td><td>Crónica. Gobierno CDMX mantiene su postura ante presiones por el reordenamiento en la Alameda Central, 24 de agosto de 2026</td></tr>
+                                <tr><td>[8]</td><td>Expansión Política. Cómo sacar las escrituras de tu vivienda en CDMX (datos de ENIGH 2024), 26 de agosto de 2026</td></tr>
+                                <tr><td>[9]</td><td>Excélsior. En CDMX no hay espacio para redes de despojo ni cárteles inmobiliarios: Brugada, 5 de agosto de 2026</td></tr>
+                                <tr><td>[10]</td><td>Expansión Política. CDMX pone en marcha cuarta estrategia para acabar con los baches, 4 de septiembre de 2025</td></tr>
+                                <tr><td>[11]</td><td>Chilango. Plan Integral de Mantenimiento de la Carpeta Asfáltica, 18 de agosto de 2025</td></tr>
+                                <tr><td>[12]</td><td>ADN40. Cómo reportar baches en CDMX: nuevo chatbot de Locatel (Bachetel), 17 de septiembre de 2025, actualizado el 1 de julio de 2026</td></tr>
+                                <tr><td>[13]</td><td>Excélsior. Plantean parquímetros en la alcaldía Tlalpan, 12 de marzo de 2023</td></tr>
+                                <tr><td>[14]</td><td>Publimetro. Buscan que dinero de parquímetros se invierta en baches, luminarias y seguridad, 11 de marzo de 2026</td></tr>
+                                <tr><td>[15]</td><td>Excélsior. Cambia sistema de parquímetros en CDMX; entregarán más dinero a las colonias, 1 de marzo de 2024</td></tr>
+                                <tr><td>[16]</td><td>Chilango. Parquímetros en CDMX suben de precio en 2026, 13 de enero de 2026</td></tr>
+                                <tr><td>[17]</td><td>Crónica. Metro registró mil 241 millones de viajes en 2025, 16 de enero de 2026</td></tr>
+                                <tr><td>[18]</td><td>Emeequis. Atados hasta 2030: monopolio publicitario de ISA Corporativo en el Metro CDMX</td></tr>
+                                <tr><td>[19]</td><td>DPL News. AT&T lleva internet gratuito a dos líneas más del Metro, 8 de noviembre de 2019</td></tr>
+                                <tr><td>[20]</td><td>Infobae. Internet gratis en CDMX: cuántos puntos de Wi-Fi hay, 24 de septiembre de 2025</td></tr>
+                                <tr><td>[21]</td><td>Crónica. Llave MX supera los 28 millones de cuentas, 8 de julio de 2026</td></tr>
+                                <tr><td>[22]</td><td>Proceso. El Senado aprueba la ley que busca eliminar los pagos en efectivo, 20 de octubre de 2026</td></tr>
+                                <tr><td>[23]</td><td>Crónica. El efectivo va a la baja en México (datos de la ENIF), 21 de octubre de 2026</td></tr>
+                                <tr><td>[24]</td><td>Expansión Política (26 de agosto de 2025) y Chilango (26 de agosto y 13 de diciembre de 2025). Programa Mercomuna</td></tr>
+                                <tr><td>[25]</td><td>El Imparcial. Encuesta Nacional ANPEC número 27 sobre tiendas de barrio, 5 de agosto de 2026</td></tr>
+                                <tr><td>[26]</td><td>EY México. Nueva Ley Federal de Protección de Datos Personales en Posesión de los Particulares (DOF, 20 de marzo de 2025)</td></tr>
+                                <tr><td>[27]</td><td>Equipo proponente. Portafolio Ciudad de México: estudios MiPuesto CDMX, Nexum, VialIA, VideoAtención P2P, Parq·CDMX y Metro Conectado, 2026 (documentación del equipo; las cifras propias deben validarse)</td></tr>
+                                <tr><td>[28]</td><td>Grupo CSI. grupocsi.com: identidad digital, contact center y software para banca y gobierno</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-circle-exclamation"></i> Nota sobre las fuentes</div>
+                    <div class="table-responsive">
+                        <table class="data-table"><tbody>
+                            <tr><td>Las notas periodísticas reproducen datos oficiales y deben verificarse con la fuente original antes de citarse en documentos formales.</td></tr>
+                        </tbody></table>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <div class="table-title"><i class="fas fa-seedling"></i> Anexo C · Líneas de crecimiento futuras</div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <tbody>
+                                <tr><td><strong>Ventanilla única de la economía popular</strong>: integrar MiPuesto, la red de abarrotes y el crédito en un solo expediente del pequeño comerciante</td></tr>
+                                <tr><td><strong>Expediente Digital Ciudadano y CURP Digital</strong> conforme se publique y reglamente la Ley de Economía Digital [22]</td></tr>
+                                <tr><td><strong>PREVIDA</strong>: previsión funeraria por suscripción de bajo costo para servidores públicos y familias (estudio del equipo) [27]</td></tr>
+                                <tr><td><strong>Observatorio de datos abiertos</strong> de vialidades, comercio en vía pública y movilidad</td></tr>
+                                <tr><td><strong>Gemelo digital de corredores prioritarios</strong> para planeación urbana</td></tr>
+                                <tr><td><strong>Ciberseguridad como servicio</strong> para alcaldías</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="footer-logo">
+                            <div class="logo-icon"><i class="fas fa-city"></i></div>
+                            <div class="logo-text">
+                                <span class="logo-title">Ciudad de México Digital y Próspera</span>
+                                <span class="logo-subtitle">Propuesta Estratégica 1.0</span>
+                            </div>
+                        </div>
+                        <p class="footer-desc">Estudio de oportunidades y portafolio de ocho proyectos tecnológicos de orden del espacio público, certeza patrimonial, recaudación, servicios urbanos y movilidad para el Gobierno de la Ciudad de México. Preparado por Jesús Antonio Bustamante Araujo, con Grupo CSI como aliado tecnológico propuesto.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Secciones</h4>
+                        <ul class="footer-links">
+                            <li><a href="#resumen">Resumen Ejecutivo</a></li>
+                            <li><a href="#diagnostico">Diagnóstico</a></li>
+                            <li><a href="#portafolio">Portafolio P1–P8</a></li>
+                            <li><a href="#priorizacion">Priorización</a></li>
+                            <li><a href="#glosario">Glosario</a></li>
+                            <li><a href="#anexos">Anexos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Proyectos Destacados</h4>
+                        <ul class="footer-links">
+                            <li><a href="#espacio-publico">MiPuesto CDMX</a></li>
+                            <li><a href="#patrimonio">Nexum y Escritura Digital</a></li>
+                            <li><a href="#atencion">VialIA y Atención P2P</a></li>
+                            <li><a href="#movilidad">Parquímetros y Metro Conectado</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Información</h4>
+                        <ul class="footer-links">
+                            <li><span><i class="fas fa-file-alt"></i> Versión 1.0</span></li>
+                            <li><span><i class="fas fa-calendar"></i> Octubre 2026</span></li>
+                            <li><span><i class="fas fa-shield-alt"></i> Documento Confidencial</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Ciudad de México Digital y Próspera · XGT Group Technologies · Grupo CSI. Propuesta para consideración de las autoridades de la Ciudad de México y de sus alcaldías.</p>
+                    <p class="footer-note">Este documento está basado en fuentes públicas y en estudios del equipo; las cifras fiscales y operativas internas deben validarse con las dependencias antes de cualquier decisión. La adopción, el alcance, la forma y los tiempos de cada proyecto corresponden a las autoridades.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
